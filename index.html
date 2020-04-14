@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ranking Escalada</title>
+    <style>
+      *{
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }
+      .row{
+        display: flex;
+      }
+      .row div{
+        flex: 1;
+        text-align: center;
+        font-size: 10px;
+      }
+      .bar{
+        position: relative;
+        height: 40px;
+        width: 7.15%;
+
+      }
+      .row-bar{
+        margin: 15px 0;
+      }
+
+      @keyframes animate6B{
+        from{opacity: 0; width: 0;}
+        to{opacity: 1; width: 85%;}
+      }
+
+      @keyframes animate6A{
+        from{opacity: 0; width: 0;}
+        to{opacity: 1; width: 75%;}
+      }
+
+      @keyframes animate5C{
+        from{opacity: 0; width: 0;}
+        to{opacity: 1; width: 65%;}
+      }
+
+      @keyframes animate5B{
+        from{opacity: 0; width: 0;}
+        to{opacity: 1; width: 55%;}
+      }
+
+      @keyframes animate5A{
+        from{opacity: 0; width: 0;}
+        to{opacity: 1; width: 45%;}
+      }
+
+      @keyframes animate4sup{
+        from{opacity: 0; width: 0;}
+        to{opacity: 1; width: 35%;}
+      }
+
+      @keyframes animate4{
+        from{opacity: 0; width: 0;}
+        to{opacity: 1; width: 25%;}
+      }
+      ._4{ animation-duration: 2.2s; animation-name: animate4; width: 25%; }
+      ._4sup{ animation-duration: 2s; animation-name: animate4sup; width: 35%; }
+      ._5A{ animation-duration: 1.8s; animation-name: animate5A; width: 45%; }
+      ._5B{ animation-duration: 1.6s; animation-name: animate5B; width: 55%; }
+      ._5C{ animation-duration: 1.4s; animation-name: animate5C; width: 65%; }
+      ._6A{ animation-duration: 1.2s; animation-name: animate6A; width: 75%; }
+      ._6B{ animation-duration: 1s; animation-name: animate6B; width: 85%; }
+
+      .face{
+        position: absolute;
+        right: 0;
+        width: 60px;
+        height: 50px;
+        margin-right: -30px;
+        margin-top: -22px;
+      }
+      .climber-name{
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        color: #333;
+      }
+      .face img{
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <h1 style="text-align: center; flex: 1; font-weight: 400;">Ranking</h1>
+    </div>
+
+    <div class="row-bar">
+      <div class="bar _6B" style="background: #a8ff00;">
+        <span class="climber-name">Nome 1</span>
+        <div class="face"><img src="user.png"></div>
+      </div>
+    </div>
+
+    <div class="row-bar">
+      <div class="bar _6A" style="background: #f4b7e8;">
+        <span class="climber-name">Nome 2</span>
+        <div class="face"><img src="user.png"></div>
+      </div>
+    </div>
+
+    <div class="row-bar">
+      <div class="bar _5B" style="background: #33da3e;">
+        <span class="climber-name">Nome 3</span>
+        <div class="face"><img src="user.png"></div>
+      </div>
+    </div>
+
+    <div class="row-bar">
+      <div class="bar _5A" style="background: #654faa;">
+        <span class="climber-name">Nome 4</span>
+        <div class="face"><img src="user.png"></div>
+      </div>
+    </div>
+
+    <div class="row-bar">
+      <div class="bar _4" style="background: #a5ab99;">
+        <span class="climber-name">Nome 5</span>
+        <div class="face"><img src="user.png"></div>
+      </div>
+    </div>
+
+
+
+    <!-- graduação -->
+    <div class="row">
+      <div style="flex: 2;">
+
+      </div>
+      <div>
+        4
+      </div>
+      <div>
+        4SUP
+      </div>
+      <div>
+        5A
+      </div>
+      <div>
+        5B
+      </div>
+      <div>
+        5C
+      </div>
+      <div>
+        6A
+      </div>
+      <div>
+        6B
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div style="flex: 2;">
+
+      </div>
+      <div style="flex: 7;">
+        Graduação de vias de escalada
+      </div>
+
+      <div>
+      </div>
+    </div>
+  </body>
+</html>
